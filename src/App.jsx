@@ -1,7 +1,6 @@
 import './App.css'
 import Header from './components/layout/Header'
 import Main from './components/layout/Main'
-import Menu from './components/Menu'
 
 function App() {
 
@@ -10,7 +9,6 @@ function App() {
     <>
   <Header />
    <Main />
-   <Menu />
    </>
   )
 }

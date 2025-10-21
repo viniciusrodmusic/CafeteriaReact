@@ -1,9 +1,12 @@
 import { useEffect, useState, useRef } from "react"
 import Button from "./Button"
+import coffee1 from "../assets/coffee1.jpg"
+import coffee2 from "../assets/coffee2.jpg"
+import coffee3 from "../assets/coffee3.jpg"
 
 function CoffeeOption({coffeeImage, textContent, price}) {
 
-    const coffeeImageUrl = coffeeImage == 3 ? "src/assets/coffee3.jpg" : coffeeImage == 2 ? "src/assets/coffee2.jpg" : coffeeImage == 1 ? "src/assets/coffee1.jpg" : ""
+    const coffeeImageUrl = coffeeImage == 3 ? coffee3 : coffeeImage == 2 ? coffee2 : coffeeImage == 1 ? coffee1 : ""
 
     const containerRef = useRef(null); // Referência ao elemento a ser observado
     const [isVisible, setIsVisible] = useState(false); // Situação de visibilidade do elemento na viewport
