@@ -6,7 +6,9 @@ function Main() {
 
     return (
         <main className="">
-            <section className={`h-screen w-full bg-cover bg-no-repeat bg-[url(${cafeteriaFundo})] flex items-center justify-center`}>
+            <section style={{
+                backgroundImage: `url(${cafeteriaFundo})`
+            }} className={`h-screen w-full bg-cover bg-no-repeat flex items-center justify-center`}>
                 <MainTitle /> 
             </section>
 
