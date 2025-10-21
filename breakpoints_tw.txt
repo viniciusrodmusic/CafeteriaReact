@@ -1,0 +1,8 @@
+Default Breakpoints:
+Tailwind CSS provides a set of default breakpoints, based on common device resolutions:
+
+sm: 640px (min-width)
+md: 768px (min-width)
+lg: 1024px (min-width)
+xl: 1280px (min-width)
+2xl: 1536px (min-width)

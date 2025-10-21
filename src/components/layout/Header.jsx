@@ -8,7 +8,7 @@ function Header() {
 
     return (
         <header className="bg-[var(--light-coffee)] rounded-2xl flex justify-center z-10 sticky top-1">
-            <ul className="flex flex-row gap-4 justify-center text-2xl ">
+            <ul className="flex flex-row gap-4 justify-center sm:text-xl xl:text-2xl ">
              
             {
                 itensMenu.map((item, index) => (

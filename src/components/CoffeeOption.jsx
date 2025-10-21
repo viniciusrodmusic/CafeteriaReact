@@ -33,7 +33,7 @@ function CoffeeOption({coffeeImage, textContent, price}) {
     return (
         <section ref={containerRef} className={`
         ${isVisible ? "transform-[translateY(0px)] opacity-100" : "transform-[translateY(50px)] opacity-0"}
-        hover:outline-1 hover:shadow-[1px_1px_50px_rgb(255,200,150))] 
+        hover:outline-1 hover:shadow-[1px_1px_50px_rgb(255,200,150)] 
         cursor-pointer duration-1500 rounded-3xl text-white bg-linear-to-bl from-[var(--dark-coffee)] 
         to-[var(--dark-coffee2)] flex flex-col items-center justify-around overflow-hidden 
         shadow-[-10px_10px_40px_rgba(0,0,0,0.5)] p-2 w-3/4 lg:h-4/4 lg:w-2/4`}>
