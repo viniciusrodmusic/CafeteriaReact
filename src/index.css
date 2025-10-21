@@ -10,6 +10,7 @@
 }
 
 body {
+  overflow-x: hidden;
   min-height: 100vh;
   background-image: linear-gradient(to right, black, rgb(55, 39, 20));
   font-family: "Poppins", Arial, Helvetica, sans-serif;
