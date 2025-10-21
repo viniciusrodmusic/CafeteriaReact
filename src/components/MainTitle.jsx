@@ -7,8 +7,8 @@ function MainTitle() {
         <>
                 <section className="text-white flex flex-col items-start w-3/4">
 
-                    <div className="flex flex-col items-center w-[75%]">
-                        <h1 className="text-9xl/[7rem] text-center w-[60rem] animate-fade-right animate-once animate-duration-1000 animate-delay-200 animate-ease-out">You need a <span className="text-[var(--light-coffee)]">coffee</span> time</h1>
+                    <div className="flex flex-col items-center w-3/4">
+                        <h1 className="text-6xl lg:text-9xl/[7rem] text-center animate-fade-right animate-once animate-duration-1000 animate-delay-200 animate-ease-out">You need a <span className="text-[var(--light-coffee)]">coffee</span> time</h1>
                         <div>
                         <Button textContent="Book a table"/>
                         <Button bgColor="red" textColor="black" textContent="About us"/>
@@ -17,7 +17,7 @@ function MainTitle() {
 
                 </section>
 
-                <div className="w-1/4">
+                <div className="h-[10rem] w-1/4">
                     {/* Somente um bloco invisível que divide o layout em dois para facilitar localizar o título mais pra esquerda */}
                 </div>
 
