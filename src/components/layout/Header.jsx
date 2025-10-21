@@ -7,15 +7,15 @@ function Header() {
     ]
 
     return (
-        <header className="bg-[var(--light-coffee)] rounded-[30px] flex justify-center sticky top-1">
-            <ul className="flex flex-row gap-[20px] justify-center text-[1.5rem] ">
+        <header className="bg-[var(--light-coffee)] rounded-2xl flex justify-center z-10 sticky top-1">
+            <ul className="flex flex-row gap-4 justify-center text-2xl ">
              
             {
                 itensMenu.map((item, index) => (
 
                     <li key={index}>
                         <i className={item.iconName}></i>
-                        <a className="pl-2 cursor-pointer hover:text-orange-900 duration-300 hover:text-shadow-[-1px_1px_10px_brown]">{item.nome}</a>
+                        <a className="pl-2 cursor-pointer hover:text-orange-900 duration-300 hover:text-shadow-[1px_1px_20px_red]">{item.nome}</a>
                     </li>) 
                 )
             }

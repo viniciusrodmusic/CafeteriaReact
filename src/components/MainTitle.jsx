@@ -1,23 +1,23 @@
-import MainButton from "./MainButton"
+import Button from "./Button"
 
 function MainTitle() {
     // Card: You need a coffee time + 2 buttons
 
     return (
         <>
-                <section className="text-white flex flex-col items-start w-[70%]">
+                <section className="text-white flex flex-col items-start w-3/4">
 
                     <div className="flex flex-col items-center w-[75%]">
-                        <h1 className="leading-[100px] text-[8rem] text-center w-[60rem]">You need a <span className="text-[var(--light-coffee)]">coffee</span> time</h1>
+                        <h1 className="text-9xl/[7rem] text-center w-[60rem] animate-fade-right animate-once animate-duration-1000 animate-delay-200 animate-ease-out">You need a <span className="text-[var(--light-coffee)]">coffee</span> time</h1>
                         <div>
-                        <MainButton textContent="Book a table"/>
-                        <MainButton bgColor="red" textColor="black" textContent="About us"/>
+                        <Button textContent="Book a table"/>
+                        <Button bgColor="red" textColor="black" textContent="About us"/>
                         </div>
                     </div>
 
                 </section>
 
-                <div className="w-[30%] h-[450px]">
+                <div className="w-1/4">
                     {/* Somente um bloco invisível que divide o layout em dois para facilitar localizar o título mais pra esquerda */}
                 </div>
 

@@ -36,7 +36,7 @@ No `package.json`:
 - `src/components/`: componentes reutilizáveis
   - `layout/Header.jsx`: cabeçalho
   - `layout/Main.jsx`: seção principal
-  - `MainTitle.jsx`, `MainButton.jsx`: elementos da hero section
+  - `MainTitle.jsx`, `Button.jsx`: elementos da hero section
 - `src/assets/`: imagens
 
 ### Funcionalidades atuais
