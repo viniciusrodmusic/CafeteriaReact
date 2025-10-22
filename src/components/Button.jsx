@@ -6,7 +6,7 @@ function Button({ bgColor, textColor, textContent }) {
     return (
         <button className={
             `${btnBgColor} ${btnTextColor}
-            duration-100
+            duration-20 lg:duration-200 ease-in-out
             outline-[var(--light-coffee)] 
             outline-1 p-4 rounded-3xl m-5
             font-bold text-sm 
