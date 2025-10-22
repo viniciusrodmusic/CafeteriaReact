@@ -5,11 +5,16 @@ function Button({ bgColor, textColor, textContent }) {
 
     return (
         <button className={
-            `${btnBgColor} ${btnTextColor} hover:scale-95 duration-100
+            `${btnBgColor} ${btnTextColor}
+            duration-100
             outline-[var(--light-coffee)] 
             outline-1 p-4 rounded-3xl m-5
-            font-bold hover:text-red-400 
-            text-sm md:text-xl lg:text-2xl cursor-pointer shadow-[-5px_5px_30px_black]
+            font-bold text-sm 
+            md:text-xl lg:text-2xl 
+            cursor-pointer shadow-[-5px_5px_30px_black]
+            hover:scale-95 hover:text-red-400 
+            active:outline-4 active:text-red-400
+            active:scale-95 active:shadow-[1px_1px_10px_black]
             `
         }>{textContent}</button>
     )
