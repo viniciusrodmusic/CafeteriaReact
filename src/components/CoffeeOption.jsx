@@ -38,7 +38,7 @@ function CoffeeOption({coffeeImage, textContent, price}) {
         cursor-pointer duration-500 lg:duration-1000 rounded-3xl text-white 
         bg-linear-to-bl from-[var(--dark-coffee)] to-[var(--dark-coffee2)]
         active:to-[var(--dark-coffee2)]/25 flex flex-col items-center justify-around overflow-hidden 
-        shadow-[-10px_10px_40px_rgba(0,0,0,0.5)] p-2 w-4/4 h-auto sm:h-4/4 sm:w-2/4`}>
+        shadow-[-10px_10px_40px_rgba(0,0,0,0.5)] p-4 w-4/4 sm:h-xl sm:w-sm`}>
             {/* IMAGEM DO CARD */}
             <img src={coffeeImageUrl} className="p-4 rounded-4xl aspect-square h-[40vw] sm:h-64 xl:h-64 object-cover"></img>
             {/* DESCRIÇÃO DO CAFÉ */}
