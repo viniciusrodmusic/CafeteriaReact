@@ -9,6 +9,10 @@
   --dark-coffee2: #230F09;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   min-height: 100vh;

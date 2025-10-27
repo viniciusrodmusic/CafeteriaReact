@@ -5,10 +5,10 @@ function Main() {
 
 
     return (
-        <main className="">
-            <section style={{
-                backgroundImage: `url(${cafeteriaFundo})`
-            }} className={`h-screen w-full bg-cover bg-no-repeat flex items-center justify-center`}>
+        <main>
+            <section id="home" style={{ backgroundImage: `url(${cafeteriaFundo})` }}
+            className={`h-screen w-full bg-cover bg-no-repeat flex items-center justify-center`}>
+                
                 <MainTitle /> 
             </section>
 
