@@ -5,7 +5,7 @@ function Menu() {
 
 
     return (
-        <section id="menu" className="h-auto xl:h-screen bg-[var(--dark-coffee)] flex flex-col md:justify-around items-center xl:p-8 gap-6" >
+        <section id="menu" className="h-auto xl:h-screen bg-[var(--dark-coffee)] flex flex-col md:justify-around items-center pt-16 xl:pt-16 xl:p-8 gap-6" >
 
             <h2 className="text-4xl lg:text-6xl text-white text-center break-normal w-3/4">How would you like to <span className="text-[var(--light-coffee)]">feel</span> today?</h2>
 
