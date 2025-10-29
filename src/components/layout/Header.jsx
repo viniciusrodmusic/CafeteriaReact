@@ -7,7 +7,7 @@ function Header() {
     ]
 
     return (
-        <header className="bg-amber-100/50 flex justify-center z-10 sticky top-0 p-2">
+        <header className="bg-amber-100/50 flex justify-center z-10 fixed top-0 p-2">
             <ul className="flex flex-row gap-4 justify-center text-2xl sm:text-3xl">
              
             {
