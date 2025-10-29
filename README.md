@@ -20,6 +20,9 @@ No `package.json`:
 - `npm run dev`: inicia o servidor de desenvolvimento (Vite)
 - `npm run build`: gera a build de produção
 - `npm run preview`: faz o preview da build
+### Deploy
+
+https://cafeteria-viniciusrod.vercel.app/
 
 ### Como rodar localmente
 1. Instale as dependências:
