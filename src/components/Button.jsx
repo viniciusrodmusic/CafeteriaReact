@@ -1,10 +1,12 @@
-function Button({ bgColor, textColor, textContent }) {
+import { toast } from "sonner";
+
+function Button({ bgColor, textColor, textContent, eventHandler }) {
 
     const btnBgColor = bgColor == "red" ? "bg-red-200" : bgColor == "yellow" ? "bg-yellow-300" : "";
     const btnTextColor = textColor == "black" ? "text-black" : "text-white"
 
     return (
-        <button className={
+        <button onClick={eventHandler} className={
             `${btnBgColor} ${btnTextColor}
             duration-20 lg:duration-200 ease-in-out
             outline-[var(--light-coffee)] 

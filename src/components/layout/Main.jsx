@@ -1,6 +1,8 @@
 import MainTitle from "../MainTitle"
 import cafeteriaFundo from "../../assets/cafeteria-fundo.jpg"
 import Menu from "../Menu"
+
+
 function Main() {
 
 

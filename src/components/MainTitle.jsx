@@ -1,3 +1,4 @@
+import { toast } from "sonner"
 import Button from "./Button"
 
 function MainTitle() {
@@ -11,8 +12,8 @@ function MainTitle() {
                         <h1 className="text-6xl/[3rem] lg:text-8xl/[5rem] text-center animate-fade-right animate-once animate-duration-1000 animate-delay-200 animate-ease-out">You need a <span className="text-[var(--light-coffee)]">coffee</span> time</h1>
                         
                         <div className="w-screen sm:w-4/4 flex justify-center">
-                            <Button textContent="Book a table"/>
-                            <Button bgColor="red" textColor="black" textContent="About us"/>
+                            <Button eventHandler={() => toast.message("github: @viniciusrodmusic", {description: "Veja o repositório desse projeto"})} textContent="Book a table"/>
+                            <Button eventHandler={() => toast.info("linkedin: @viniciusrodmusic")} bgColor="red" textColor="black" textContent="About us"/>
                         </div>
 
                     </div>
