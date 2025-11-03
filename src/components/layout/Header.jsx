@@ -15,7 +15,7 @@ function Header() {
 
                     <li key={index}>
                         <i className={item.iconName}></i>
-                        <a href={item.href} className="pl-2 cursor-pointer  hover:text-amber-500 active:text-amber-100 hover:scale-125 active:text-shadow-[1px_1px_10px_black] hover:text-shadow-[1px_1px_20px_red] duration-300">{item.nome}</a>
+                        <a href={item.href} className="pl-2 cursor-pointer hover:text-amber-500 active:text-amber-100 hover:scale-125 active:text-shadow-[1px_1px_10px_black] hover:text-shadow-[1px_1px_20px_red] duration-300">{item.nome}</a>
                     </li>) 
                 )
             }

@@ -3,11 +3,17 @@ import Button from "./Button"
 import coffee1 from "../assets/coffee1.jpg"
 import coffee2 from "../assets/coffee2.jpg"
 import coffee3 from "../assets/coffee3.jpg"
+import { Modal } from "antd"
+
 
 function CoffeeOption({coffeeImage, textContent, price}) {
+    // Modal
+    const [isModalOpen, setIsModalOpen] = useState(false)
+    const toggleModal = () => setIsModalOpen(prev => !prev);
+
+
 
     const coffeeImageUrl = coffeeImage == 3 ? coffee3 : coffeeImage == 2 ? coffee2 : coffeeImage == 1 ? coffee1 : ""
-
     const containerRef = useRef(null); // Referência ao elemento a ser observado
     const [isVisible, setIsVisible] = useState(false); // Situação de visibilidade do elemento na viewport
 
@@ -28,7 +34,7 @@ function CoffeeOption({coffeeImage, textContent, price}) {
 
 
 
-    useState
+   
 
     return (
         // CONTAINER QUE ABRIGA IMAGEM, DESCRIÇÃO, PREÇO E BOTÃO DE COMPRA
@@ -39,6 +45,18 @@ function CoffeeOption({coffeeImage, textContent, price}) {
         bg-linear-to-bl from-[var(--dark-coffee)] to-[var(--dark-coffee2)]
         active:to-[var(--dark-coffee2)]/25 flex flex-col items-center justify-around overflow-hidden 
         shadow-[-10px_10px_40px_rgba(0,0,0,0.5)] p-4 w-4/4 sm:h-xl sm:w-sm`}>
+            <Modal
+                open={isModalOpen}
+                title="Confirmar pedido"
+                onOk={toggleModal}
+                onCancel={toggleModal}
+                closable={{ 'aria-label': 'Custom Close Button' }}
+                centered
+                destroyOnHidden
+
+            >
+                <p>Verifique seu pedido e insira seus dados de pagamento para continuar a compra</p>
+            </Modal>
             {/* IMAGEM DO CARD */}
             <img src={coffeeImageUrl} className="p-4 rounded-4xl aspect-square h-[40vw] sm:h-64 xl:h-64 object-cover"></img>
             {/* DESCRIÇÃO DO CAFÉ */}
@@ -47,7 +65,7 @@ function CoffeeOption({coffeeImage, textContent, price}) {
             {/* CONTAINER QUE ABRIGA O PREÇO E O BOTÃO DE COMPRAR */}
             <div className="flex items-center justify-around h-24 w-full whitespace-nowrap">
                 <p className="font-['DM_Serif_Display',Arial] text-[min(5vw,2rem)] text-[var(--light-coffee)]">{price}</p>
-                <Button bgColor="yellow" textColor="black" textContent="order"/>
+                <Button eventHandler={toggleModal} bgColor="yellow" textColor="black" textContent="order"/>
             </div>
 
         </section>
