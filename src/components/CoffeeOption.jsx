@@ -6,7 +6,7 @@ import coffee3 from "../assets/coffee3.jpg"
 import { Modal } from "antd"
 
 
-function CoffeeOption({coffeeImage, textContent, price}) {
+function CoffeeOption({ coffeeImage, textContent, price, star }) {
     // Modal
     const [isModalOpen, setIsModalOpen] = useState(false)
     const toggleModal = () => setIsModalOpen(prev => !prev);
@@ -41,10 +41,10 @@ function CoffeeOption({coffeeImage, textContent, price}) {
         <section ref={containerRef} className={`
         ${isVisible ? "transform-[translateY(0px)] opacity-100" : "transform-[translateY(50px)] opacity-0"}
         hover:outline-1 hover:shadow-[1px_1px_50px_rgb(255,200,150)] active:shadow-none active:outline-4
-        cursor-pointer duration-500 lg:duration-1000 rounded-3xl text-white 
-        bg-linear-to-bl from-[var(--dark-coffee)] to-[var(--dark-coffee2)]
+        cursor-pointer duration-500 lg:duration-1000 rounded-xl text-white 
+        bg-[var(--dark-coffee)]
         active:to-[var(--dark-coffee2)]/25 flex flex-col items-center justify-around overflow-hidden 
-        shadow-[-10px_10px_40px_rgba(0,0,0,0.5)] p-4 w-4/4 sm:h-xl sm:w-sm`}>
+        shadow-[-10px_10px_40px_rgba(0,0,0,0.5)] w-3/4 sm:h-xl sm:w-sm`}>
             <Modal
                 open={isModalOpen}
                 title="Confirmar pedido"
@@ -53,14 +53,21 @@ function CoffeeOption({coffeeImage, textContent, price}) {
                 closable={{ 'aria-label': 'Custom Close Button' }}
                 centered
                 destroyOnHidden
-
             >
                 <p>Verifique seu pedido e insira seus dados de pagamento para continuar a compra</p>
             </Modal>
             {/* IMAGEM DO CARD */}
-            <img src={coffeeImageUrl} className="p-4 rounded-4xl aspect-square h-[40vw] sm:h-64 xl:h-64 object-cover"></img>
+            <img src={coffeeImageUrl} className="w-full h-[40vw] sm:h-64 xl:h-64 object-cover mb-2"></img>
             {/* DESCRIÇÃO DO CAFÉ */}
             <p className="text-amber-100 sm:h-24 flex text-center items-center font-bold text-[min(5vw,1.4rem)]">{textContent}</p>
+
+            <div className="flex gap-2 text-yellow-100">
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star"></i>
+            </div>
 
             {/* CONTAINER QUE ABRIGA O PREÇO E O BOTÃO DE COMPRAR */}
             <div className="flex items-center justify-around h-24 w-full whitespace-nowrap">
