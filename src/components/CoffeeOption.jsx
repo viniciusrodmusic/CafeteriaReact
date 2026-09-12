@@ -40,7 +40,7 @@ function CoffeeOption({ coffeeImage, textContent, price, star }) {
         // CONTAINER QUE ABRIGA IMAGEM, DESCRIÇÃO, PREÇO E BOTÃO DE COMPRA
         <section ref={containerRef} className={`
         ${isVisible ? "transform-[translateY(0px)] opacity-100" : "transform-[translateY(50px)] opacity-0"}
-        hover:outline-1 hover:shadow-[1px_1px_50px_rgb(255,200,150)] active:shadow-none active:outline-4
+        hover:outline-1 hover:shadow-[1px_1px_10px_rgb(255,200,150)] active:shadow-none active:outline-4
         cursor-pointer duration-500 lg:duration-1000 rounded-xl text-white 
         bg-[var(--dark-coffee)]
         active:to-[var(--dark-coffee2)]/25 flex flex-col items-center justify-around overflow-hidden 
