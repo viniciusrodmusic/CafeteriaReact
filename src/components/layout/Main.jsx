@@ -1,6 +1,7 @@
 import MainTitle from "../MainTitle"
 import cafeteriaFundo from "../../assets/cafeteria-fundo.jpg"
 import Menu from "../Menu"
+import AboutUs from "../AboutUs"
 
 
 function Main() {
@@ -19,6 +20,7 @@ function Main() {
             <Menu />
 
             {/* SEÇÃO DO ABOUT US */}
+            <AboutUs />
           
         </main>
 
